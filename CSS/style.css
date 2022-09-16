@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Open+Sans:wght@300;400;700&family=Vampiro+One&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    background-origin:border-box;
+
+}
+body{   
+font-family: 'Open Sans', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+.content{
+    background-color: #fff;
+    border-radius: 15px;
+    width:80%;
+    height:50%;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+}
+.content::before{
+    content:"";
+    border-radius:17px;
+    position:absolute;
+    background-color: rgb(235, 102, 13);
+    width: 646px;
+    height:100%
+    
+}  
+.title{
+    
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary{
+    color:#fff;
+}
+.title-second{
+    color: #f15e09;
+}
+
+.description{ 
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height:30px;
+}
+#a-1{
+    padding: 7px;
+    border-radius: 9px;
+    border: none;
+}
+#a-2{
+     padding: 7px;
+    border-radius: 9px;
+    border: none;
+
+}
+#a-3{
+     padding: 7px;
+    border-radius: 9px;
+    border: none;
+
+}
+
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding:10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid #fff;
+    
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color:#f15e09
+}
+.primeiro-conteiner{
+    display: flex;
+}
+.primeira-coluna{
+    text-align: center;
+    flex:1 0 auto;
+    z-index: 10;
+}
+.segunda-coluna{
+    
+    flex:20 auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-decoration: none;
+}
+.lista-media{
+    padding:17px;
+    display: flex;
+    space-between:2px;
+    position: relative;
+}
+  
+.lista-social-media::marker{
+    text-decoration: none;
+}
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+}
+
+li { 
+    display: block; 
+}
+
+li::before { 
+    content:counter() 
+
+}
+.form{ 
+    display: flex;
+    flex-direction: column;
+}
+.btn-1{
+     border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding:10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    color:#2d4d4e;
+    background-color:#eb6f0d45;
+    margin: 49px;
+}
+    
+
+.segundo-conteiner{
+    position:absolute;
+    display:none;
+}
